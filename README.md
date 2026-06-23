@@ -176,7 +176,7 @@ By default, inference saves only the normalized target-shell prediction:
 SAVE_DIR/dti_shnet_pred/<subject>/signal_pred.nii.gz
 ```
 
-The ROI prediction is pasted into a full-size target-shell volume. Outside the ROI, the preprocessed DTI baseline shell is used as the background. Optional target-shell debug outputs can be enabled in `infer.py`, but they are not required for the main evaluation pipeline.
+The ROI prediction is pasted into a full-size target-shell volume. Outside the ROI, the preprocessed DTI extrapolation baseline shell is used as the background. Optional target-shell debug outputs can be enabled in `infer.py`, but they are not required for the main evaluation pipeline.
 
 ### 6. Postprocess and evaluate
 
