@@ -69,7 +69,8 @@ For the main `lmax=8` setting, the SH coefficient dimension is `K=45`. The full 
 │   ├── 0_prepare.sh                 # Preprocessing
 │   ├── 1_train_main.sh              # Main training
 │   ├── 2_test_main.sh               # Inference
-│   └── 3_run_postprocess_main.sh    # Visual / export / DTI / optional NODDI
+│   ├── 3_run_postprocess_main.sh    # Visual / export / DTI / optional NODDI
+│   └── run_from_scratch.ipynb       # Tutorial for running our codes from scratch
 ├── splits/
 │   └── eval_id.txt                  # Evaluation subject IDs
 ├── environment.yml
