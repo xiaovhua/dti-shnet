@@ -5,7 +5,7 @@
     <img src="https://img.shields.io/badge/Code-GitHub-blue?logo=github&style=for-the-badge" alt="code"/>
   </a>
   <a href="https://github.com/xiaovhua/dti-shnet">
-    <img src="https://img.shields.io/badge/Code-GitHub-blue?logo=github&style=for-the-badge" alt="paper"/>
+    <img src="https://img.shields.io/badge/Task-dMRI%20Synthesis-6A5ACD?style=for-the-badge&labelColor=2f2f2f" alt="paper"/>
   </a>
   <!-- <img src="https://img.shields.io/badge/Task-dMRI%20Synthesis-6A5ACD?style=for-the-badge&labelColor=2f2f2f" alt="task"/>
   <img src="https://img.shields.io/badge/Model-3D%20U--Net%20%2B%20SH-2E8B57?style=for-the-badge&labelColor=2f2f2f" alt="model"/> -->
