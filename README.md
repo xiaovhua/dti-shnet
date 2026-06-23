@@ -330,11 +330,7 @@ The citation entry will be updated once the official proceedings information is 
 
 ## 📬 Contact
 
-For questions or collaborations, please contact Binghua Li at `nkvhua@outlook.com`.
-
-## 🙏 Acknowledgements
-
-We thank the maintainers of the open-source scientific Python, PyTorch, DIPY, MRtrix3, and AMICO ecosystems. This project builds on standard tools for diffusion MRI processing and volumetric deep learning.
+For questions or collaborations, please contact Binghua Li at `b.li.qr@juntendo.ac.jp`.
 
 ## 📄 License
 
