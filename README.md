@@ -104,7 +104,11 @@ For NODDI fitting, install AMICO:
 pip install dmri-amico dipy
 ```
 
-### 3. Prepare data
+### 3. Tutorial for training from scratch
+
+If you want to train DTI-SHNet from scratch on your own dataset, you can either follow `scripts/run_from_scratch.ipynb` or follow Sections 4–7 below, from data preparation to postprocessing and evaluation.
+
+### 4. Prepare data
 
 The preprocessing interface is template-based. All templates are interpreted relative to `--root` and should contain `{subject}`.
 
@@ -143,7 +147,7 @@ python -m dti_shnet.preprocess \
 
 Each preprocessed subject folder contains normalized source/target signals, the DTI baseline, `S0`, `brain_mask`, FA/MD priors, protocol files, and SH metadata.
 
-### 4. Train the model
+### 5. Train the model
 
 Please set the correct `PREPROC_ROOT` and `OUT_DIR` in [`scripts/1_train_main.sh`](./scripts/1_train_main.sh), then run:
 
@@ -164,7 +168,7 @@ lam=0.006          canon_n=60          optimizer=AdamW
 
 Training saves `last.pt`, `best.pt`, and `meta.json` under the output directory. The verified inference pipeline uses `last.pt`.
 
-### 5. Run inference
+### 6. Run inference
 
 Please set the correct `PREPROC_ROOT`, `CKPT`, and `SAVE_DIR` in [`scripts/2_test_main.sh`](./scripts/2_test_main.sh), then run:
 
@@ -180,7 +184,7 @@ SAVE_DIR/dti_shnet_pred/<subject>/signal_pred.nii.gz
 
 The ROI prediction is pasted into a full-size target-shell volume. Outside the ROI, the preprocessed DTI extrapolation baseline shell is used as the background. Optional target-shell debug outputs can be enabled in `infer.py`, but they are not required for the main evaluation pipeline.
 
-### 6. Postprocess and evaluate
+### 7. Postprocess and evaluate
 
 Please set the original data path, preprocessed data path, prediction directory, and dataset layout in [`scripts/3_run_postprocess_main.sh`](./scripts/3_run_postprocess_main.sh), then run:
 
