@@ -320,7 +320,7 @@ noddi/noddi_summary.csv
 - The main model uses `use_dti=1` and `use_sig_loss=1`.
 
 
-## Pretrained checkpoint
+## 💾 Pretrained checkpoint
 
 The pretrained DTI-SHNet checkpoint can be downloaded from Google Drive:
 
@@ -340,6 +340,7 @@ PREPROC_ROOT=/path/to/preprocessed \
 CKPT=/path/to/dti_shnet_camcan_lmax8_b1000_to_b2000_last.pt \
 SAVE_DIR=./results \
 bash scripts/2_test_main.sh
+```
 
 ## 🤝 Citation
 
