@@ -361,6 +361,3 @@ The citation entry will be updated once the official proceedings information is 
 
 For questions or collaborations, please contact Binghua Li at `b.li.qr@juntendo.ac.jp`.
 
-## 📄 License
-
-Please refer to the repository license file for usage terms.
