@@ -319,6 +319,28 @@ noddi/noddi_summary.csv
 - The verified inference pipeline uses `last.pt`.
 - The main model uses `use_dti=1` and `use_sig_loss=1`.
 
+
+## Pretrained checkpoint
+
+The pretrained DTI-SHNet checkpoint can be downloaded from Google Drive:
+
+- [Download checkpoint](https://drive.google.com/file/d/1PjaoBXXq6MiJ6b35sLGfXj93Lyo2F9d3/view?usp=sharing)
+
+Checkpoint setting:
+
+- Source shell: b=1000
+- Target shell: b=2000
+- SH order: lmax=8
+- Model: DTI-SHNet with DTI priors and signal-consistency loss
+
+After downloading, run inference with:
+
+```bash
+PREPROC_ROOT=/path/to/preprocessed \
+CKPT=/path/to/dti_shnet_camcan_lmax8_b1000_to_b2000_last.pt \
+SAVE_DIR=./results \
+bash scripts/2_test_main.sh
+
 ## 🤝 Citation
 
 If you find this work useful, please consider citing our paper:
