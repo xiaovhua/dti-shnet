@@ -333,7 +333,7 @@ Checkpoint setting:
 - SH order: lmax=8
 - Model: DTI-SHNet with DTI priors and signal-consistency loss
 
-After downloading, run inference with:
+After downloading and preparing the data, run inference with:
 
 ```bash
 PREPROC_ROOT=/path/to/preprocessed \
