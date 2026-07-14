@@ -349,7 +349,7 @@ If you find this work useful, please consider citing our paper:
 ```bibtex
 @inproceedings{li2026dtishnet,
   title     = {DTI-Guided Volumetric Spherical Harmonics Regression for Single-to-Multi-Shell dMRI Synthesis},
-  author    = {Li, Binghua and others},
+  author    = {Li, Binghua and Andica, Christina and Liang, Tong and Chang, Ziqing and Li, Chao and Uchida, Wataru and Takabayashi, Kaito and Zhao, Qibin and Tanaka, Toshihisa and Sun, Zhe and Aoki, Shigeki},
   booktitle = {Proceedings of Medical Image Computing and Computer Assisted Intervention -- MICCAI},
   year      = {2026}
 }
